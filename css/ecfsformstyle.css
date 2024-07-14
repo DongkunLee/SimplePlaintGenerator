@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'RIDIBatang'; 
+    src: url('../../lib/tpl/lawwiki2/font/RIDIBatang.otf') format('opentype'); 
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'KJCMyung'; 
+    src: url('../../lib/tpl/lawwiki2/font/KimjungchulMyungjo-Regular.ttf') format('truetype'); 
+    src: url('../../lib/tpl/lawwiki2/font/KimjungchulMyungjo-Regular.otf') format('opentype');
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'KJCGothic'; 
+    src: url('../../lib/tpl/lawwiki2/font/KimjungchulGothic-Bold.ttf') format('truetype'); 
+    src: url('../../lib/tpl/lawwiki2/font/KimjungchulGothic-Bold.otf') format('opentype');
+    font-weight: bold; font-style: bold;
+}
+
+@font-face {
+    font-family: 'Jalpool'; 
+    src: url('../../lib/tpl/lawwiki2/font/잘풀리는오늘 MEDIUM.TTF') format('truetype'); 
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'JalNan'; 
+    src: url('../../lib/tpl/lawwiki2/font/JALNAN.TTF') format('truetype'); 
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kukdae'; 
+    src: url('../../lib/tpl/lawwiki2/font/SDKukdetopokki-bBd.OTF') format('opentype'); 
+    font-weight: normal; font-style: normal;
+}
+
+body{
+    line-height: 200%;
+}
+
+h1 {
+    font-family: 'KJCGothic';
+    font-size: 2.2em;
+    color: #000d60;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 20px 5px 20px 10px; 
+    padding: 0px 8px 15px 0px;
+    text-shadow: 2px 2px 3px #222222;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'JalNan'; 
+    font-size: 1.8em;
+    color: black;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin: 24px 6px !important;
+    padding: 5px 0 7px 15px;
+    text-shadow: 2px 2px 3px #222222;
+    border-bottom: solid violet 3px;
+}
+
+h3 {
+    font-family: 'JalPool'; 
+    font-size: 1.8em;
+    color: wheat;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    margin: 20px 6px !important;
+    padding: 5px 0 7px 15px;
+    text-shadow: 2px 2px 3px #222222;
+}
+
+
+.board-write-box
+{
+    line-height: 200%;
+    margin: 10px;
+    padding: 5px;
+    border: solid darkcyan 2px;
+    min-height:  -moz-fit-content;
+    min-height: fit-content;
+    display: grid;
+    grid-template-rows: 30px 30px 30px 100px 30px;
+    row-gap: 10px;
+}
+
+
+.board-write-box .row
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 200px 1fr;
+    min-height: 20px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.board-write-box .row .addrRow
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    row-gap: 15px;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.board-write-box .row .addrRow .Itemrow
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+/* .board-write-box .row-half
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    background-color: aqua;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    display: grid;
+}
+
+.board-write-box .row-half .item
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 100px minmax(100px, auto);
+
+} */
+
+.board-write-box .row .label
+{
+    background-color: cornflowerblue;
+    color: darkgreen;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    min-width: 200px;
+    font-family: 'KJCMyung';
+}
+
+.board-write-box .row .inputbox
+{
+    background-color: beige;
+    color: darkorange;
+    border-bottom: 3px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 1.2em;
+    font-family: 'JalNan'; 
+}
+
+.board-write-box .row .checkbox
+{
+    background-color: cornflowerblue;
+    color: darkgreen;
+    vertical-align: middle;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.panel
+{
+    line-height: 200%;
+    margin: 20px 10px 30px 20px;
+    padding: 10px;
+    border: solid skyblue 2px;
+    background-color: skyblue;
+
+    display: grid;
+    grid-template-rows: 60px repeat(4, 30px) 200px;
+    row-gap: 10px;
+
+    min-height:  -moz-fit-content;
+    min-height: fit-content;
+}
+
+.panel .row
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 200px 1fr;
+    /* min-height: 20px;
+    max-height: 60px; */
+    margin: 10px;
+}
+
+.panel .row .addrRow
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    row-gap: 15px;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.panel .row .addrRow .Itemrow
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.panel .row .label
+{
+    background-color: cornflowerblue;
+    color: darkgreen;
+    text-align: center;
+    font-size: 1.2em;
+    min-width: 200px;
+    font-family: 'KJCMyung';
+}
+
+.panel .row .inputbox
+{
+    background-color: beige;
+    color: darkorange;
+    border-bottom: 3px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 1.2em;
+    font-family: 'JalNan'; 
+}
+
+.addrInputBox
+{
+    background-color: mistyrose;
+    color: darkorange;
+    border-bottom: 3px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 1.2em;
+    font-family: 'JalNan'; 
+}
+
+/* 고소요지 섹션  */
+.board-content
+{
+    line-height: 200%;
+    margin: 10px;
+    padding: 5px;
+    border: solid darkcyan 2px;
+    min-height:  -moz-fit-content;
+    min-height: fit-content;
+    display: grid;
+    grid-template-rows: 100px 30px 30px 100px 30px;
+    row-gap: 10px;
+}
+
+
+.board-content .row
+{
+    font-family: 'KJCMyung';
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 200px 1fr;
+    min-height: 20px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.board-content .row .label
+{
+    background-color: cornflowerblue;
+    color: darkgreen;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    min-width: 200px;
+    font-family: 'KJCMyung';
+}
+
+.board-content .row .inputbox
+{
+    background-color: beige;
+    color: darkorange;
+    border-bottom: 3px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 1.2em;
+    font-family: 'JalNan'; 
+}
+
+
+.board-content .row legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    align-content: center;
+    font-family: 'JalPool'; 
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
